@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav class="navbar" id="myNavbar">
         <div class="logo">InternProject</div>
         <ul class="nav-links">
@@ -16,8 +15,6 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
-    <!-- Hero Section -->
     <header id="home" class="hero-section">
         <div class="hero-content">
             <h1>Welcome to My Landing Page</h1>
@@ -26,7 +23,6 @@
         </div>
     </header>
 
-    <!-- Features Section to allow scrolling -->
     <section id="about" class="features">
         <div class="feature-box">
             <h3>Hover Effect</h3>
@@ -42,25 +38,18 @@
         </div>
     </section>
 
-    <!-- Extra space just to make the page scrollable -->
     <div style="height: 800px; background-color: #f9f9f9;"></div>
 
     <footer id="contact" class="footer">
-        <p>&copy; 2026 SkillCraft Internship Task 01.</p>
+        <p>&copy; 2026 SkillCraft Internship Task 01</p>
     </footer>
 
-    <!-- JAVASCRIPT: This changes the navbar style when you scroll -->
     <script>
-        // Listen for the user scrolling
         window.addEventListener('scroll', function() {
-            // Grab the navbar
             const navbar = document.getElementById('myNavbar');
-            
-            // If scrolled down more than 50 pixels, add the 'scrolled' class
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
             } else {
-                // If at the top, remove it
                 navbar.classList.remove('scrolled');
             }
         });
