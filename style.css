@@ -5,27 +5,25 @@
     font-family: Arial, sans-serif;
 }
 
-/* --- THE NAVBAR (FIXED POSITION) --- */
 .navbar {
-    position: fixed; /* Requirement: Fixed position */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent; /* Starts clear */
+    background-color: transparent; 
     color: #333;
     padding: 20px 40px;
-    z-index: 1000; /* Keeps it above all other content */
-    transition: all 0.4s ease; /* Makes the color change smooth */
+    z-index: 1000; 
+    transition: all 0.4s ease; 
 }
 
-/* Requirement: Changes color when scrolled (triggered by Javascript) */
 .navbar.scrolled {
-    background-color: #333; /* Turns dark when scrolled */
+    background-color: #333; 
     color: white;
-    padding: 15px 40px; /* Shrinks slightly for a cool effect */
+    padding: 15px 40px; 
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
@@ -42,15 +40,13 @@
     transition: color 0.3s;
 }
 
-/* Requirement: Changes color when hovering */
 .nav-links a:hover {
     color: #4CAF50; 
 }
 
-/* --- REST OF THE PAGE --- */
 .hero-section {
     background-color: #e0f7fa;
-    height: 100vh; /* Makes the hero section take up the full screen height */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +99,6 @@
     padding: 20px;
 }
 
-/* Mobile responsiveness */
 @media (max-width: 768px) {
     .features {
         flex-direction: column;
